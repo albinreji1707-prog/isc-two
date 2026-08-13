@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISC Abu Dhabi | Indian Social Centre</title>
+  <meta name="description" content="ISC Abu Dhabi is a non-profit organization committed to promoting Indian culture, supporting the community, and strengthening unity.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome 6 Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons (Back-up) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link href="isc2.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg animate-nav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/isc_logo.svg" alt="ISC Abu Dhabi Logo" id="navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="nav-home">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-about">
+              About Us
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Our History</a></li>
+              <li><a class="dropdown-item" href="#">Management Committee</a></li>
+              <li><a class="dropdown-item" href="#">President's Message</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-events">Events</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="nav-services">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Community Help Desk</a></li>
+              <li><a class="dropdown-item" href="#">Consular Services</a></li>
+              <li><a class="dropdown-item" href="#">Hall Booking</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-membership">Membership</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="nav-news">News</a>
+          </li>
+          <li class="nav-item me-lg-3">
+            <a class="nav-link" href="#" id="nav-contact">Contact Us</a>
+          </li>
+          <li class="nav-item mt-3 mt-lg-0">
+            <a class="btn-become-member" href="#" id="btn-header-member">
+              Become a Member <i class="fa-regular fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <!-- Right side background mosque image -->
+    <div class="hero-bg-wrapper animate-hero-bg">
+      <img src="assets/hero_mosque.png" alt="Sheikh Zayed Grand Mosque Abu Dhabi" class="hero-bg-image">
+    </div>
+    
+    <div class="container hero-content">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <!-- Slogan -->
+          <h1 class="hero-title animate-hero-title">
+            Uniting Indians,<br>
+            <span class="highlight-saffron">Celebrating Culture,</span><br>
+            <span class="highlight-green">Serving Community.</span>
+          </h1>
+          
+
+          <!-- Paragraph description -->
+          <p class="hero-desc animate-hero-desc">
+            ISC Abu Dhabi is a non-profit organization committed to promoting Indian culture, supporting the community and strengthening unity.
+          </p>
+          
+          <!-- CTA Buttons -->
+          <div class="hero-btns animate-hero-btns">
+            <a href="#" class="btn-explore-events" id="btn-hero-explore">
+              Explore Events <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#" class="btn-about-us-outline" id="btn-hero-about">
+              About Us <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Premium Curved Wave at the bottom -->
+    <div class="hero-wave-container d-none d-lg-block">
+      <svg class="hero-wave-svg" viewBox="0 0 1440 220" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="orange-yellow-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#E65C00" />
+            <stop offset="100%" stop-color="#FFB300" />
+          </linearGradient>
+        </defs>
+        <!-- Gold/Saffron Top border curve -->
+        <path class="wave-orange-flow" d="M480 220C730 175 940 -5 1440 -5" stroke="url(#orange-yellow-grad)" stroke-width="6" fill="none"/>
+        <!-- Main Dark Blue Wave fill -->
+        <path class="wave-blue-flow" d="M500 220C750 180 950 0 1440 0V220H500Z" fill="#0A2540"/>
+      </svg>
+    </div>
+
+    <!-- Statistics Overlaid inside the wave -->
+    <div class="hero-stats-overlay animate-hero-stats">
+      <div class="stats-flex-container">
+        <!-- Stat Item 1 -->
+        <div class="stat-item">
+          <div class="stat-icon-wrapper">
+            <i class="fa-regular fa-users"></i>
+          </div>
+          <div>
+            <div class="stat-num">25K+</div>
+            <div class="stat-label">Members</div>
+          </div>
+        </div>
+        <!-- Stat Item 2 -->
+        <div class="stat-item">
+          <div class="stat-icon-wrapper">
+            <i class="fa-regular fa-calendar-days"></i>
+          </div>
+          <div>
+            <div class="stat-num">200+</div>
+            <div class="stat-label">Events</div>
+          </div>
+        </div>
+        <!-- Stat Item 3 -->
+        <div class="stat-item">
+          <div class="stat-icon-wrapper">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div>
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Community Initiatives</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section class="py-5 my-4" id="what-we-do-section">
+    <div class="container">
+      <div class="section-title-wrapper text-center reveal-hidden">
+        <h2 class="section-tag">What We Do</h2>
+      </div>
+      
+      <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-6">
+        <!-- Card 1 -->
+        <div class="col reveal-hidden reveal-delay-1">
+          <div class="what-we-do-card">
+            <div class="card-icon-circle icon-orange">
+              <i class="fa-solid fa-users"></i>
+            </div>
+            <h3>Community Welfare</h3>
+            <p>Supporting the Indian community through various initiatives.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col reveal-hidden reveal-delay-2">
+          <div class="what-we-do-card">
+            <div class="card-icon-circle icon-green">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>Education Support</h3>
+            <p>Scholarships, student support and educational guidance.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col reveal-hidden reveal-delay-3">
+          <div class="what-we-do-card">
+            <div class="card-icon-circle icon-blue">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h3>Social Services</h3>
+            <p>Helping individuals and families in times of need.</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="col reveal-hidden reveal-delay-4">
+          <div class="what-we-do-card">
+            <div class="card-icon-circle icon-pink">
+              <i class="fa-solid fa-spa"></i>
+            </div>
+            <h3>Indian Culture & Heritage</h3>
+            <p>Preserving and promoting our rich cultural heritage.</p>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col reveal-hidden reveal-delay-5">
+          <div class="what-we-do-card">
+            <div class="card-icon-circle icon-orange">
+              <i class="fa-solid fa-person-running"></i>
+            </div>
+            <h3>Sports & Recreation</h3>
+            <p>Encouraging sports, fitness and healthy lifestyle.</p>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col reveal-hidden reveal-delay-6">
+          <div class="what-we-do-card">
+            <div class="card-icon-circle icon-green">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Networking</h3>
+            <p>Building strong connections within the community.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Facilities Section -->
+  <section class="py-5" id="facilities-section">
+    <div class="container">
+      <div class="section-title-wrapper text-center reveal-hidden">
+        <h2 class="section-tag">Key Facilities &amp; Amenities</h2>
+      </div>
+      
+      <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <!-- Facility 1 -->
+        <div class="col reveal-hidden reveal-delay-1">
+          <div class="facility-card">
+            <div class="facility-card-icon">
+              <i class="fa-solid fa-table-tennis-paddle-ball text-danger"></i>
+            </div>
+            <h3>Badminton Arena</h3>
+            <p>Multiple international standard indoor courts equipped with professional wooden flooring and lighting.</p>
+          </div>
+        </div>
+        <!-- Facility 2 -->
+        <div class="col reveal-hidden reveal-delay-2">
+          <div class="facility-card">
+            <div class="facility-card-icon">
+              <i class="fa-solid fa-person-swimming text-success"></i>
+            </div>
+            <h3>Olympic Pool</h3>
+            <p>A temperature-controlled swimming pool with dedicated coaching programs and separate timings for families.</p>
+          </div>
+        </div>
+        <!-- Facility 3 -->
+        <div class="col reveal-hidden reveal-delay-3">
+          <div class="facility-card">
+            <div class="facility-card-icon">
+              <i class="fa-solid fa-book-open text-warning"></i>
+            </div>
+            <h3>Library &amp; Study Room</h3>
+            <p>A quiet, cozy library housing over 10,000 books, research journals, daily newspapers, and high-speed Wi-Fi.</p>
+          </div>
+        </div>
+        <!-- Facility 4 -->
+        <div class="col reveal-hidden reveal-delay-4">
+          <div class="facility-card">
+            <div class="facility-card-icon">
+              <i class="fa-solid fa-masks-theater text-primary"></i>
+            </div>
+            <h3>Multi-Purpose Auditorium</h3>
+            <p>A spacious, fully air-conditioned auditorium with premium acoustics and seating capacity for major community events.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section class="py-5" id="events-section">
+    <div class="container">
+      <div class="section-header-flex reveal-hidden">
+        <h2>Upcoming Events</h2>
+        <a href="#" class="view-all-link" id="link-events-viewall">
+          View All Events <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      
+      <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <!-- Event 1 -->
+        <div class="col reveal-hidden reveal-delay-1">
+          <div class="event-card">
+            <div class="event-img-wrapper">
+              <img src="assets/event_dance.png" alt="Summer Festival 2026" class="event-img">
+              <div class="event-date-badge badge-orange">
+                <div class="event-date-num text-danger">25</div>
+                <div class="event-date-month text-danger">May</div>
+              </div>
+            </div>
+            <div class="event-body">
+              <h3 class="event-title">Summer Festival 2026</h3>
+              <div class="event-meta-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>06:00 PM – 10:00 PM</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>ISC Abu Dhabi, Auditorium</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Event 2 -->
+        <div class="col reveal-hidden reveal-delay-2">
+          <div class="event-card">
+            <div class="event-img-wrapper">
+              <img src="assets/event_yoga.png" alt="International Yoga Day" class="event-img">
+              <div class="event-date-badge badge-green">
+                <div class="event-date-num text-success">15</div>
+                <div class="event-date-month text-success">Jun</div>
+              </div>
+            </div>
+            <div class="event-body">
+              <h3 class="event-title">International Yoga Day</h3>
+              <div class="event-meta-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>07:00 AM – 09:00 AM</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>ISC Abu Dhabi, Main Hall</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Event 3 -->
+        <div class="col reveal-hidden reveal-delay-3">
+          <div class="event-card">
+            <div class="event-img-wrapper">
+              <img src="assets/event_iftar.png" alt="Community Iftar Dinner" class="event-img">
+              <div class="event-date-badge badge-orange">
+                <div class="event-date-num text-warning">20</div>
+                <div class="event-date-month text-warning">Jun</div>
+              </div>
+            </div>
+            <div class="event-body">
+              <h3 class="event-title">Community Iftar Dinner</h3>
+              <div class="event-meta-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>07:00 PM – 10:00 PM</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>ISC Abu Dhabi, Lawn</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Event 4 -->
+        <div class="col reveal-hidden reveal-delay-4">
+          <div class="event-card">
+            <div class="event-img-wrapper">
+              <img src="assets/event_indep.png" alt="Indian Independence Day" class="event-img">
+              <div class="event-date-badge badge-blue">
+                <div class="event-date-num text-primary">05</div>
+                <div class="event-date-month text-primary">Jul</div>
+              </div>
+            </div>
+            <div class="event-body">
+              <h3 class="event-title">Indian Independence Day</h3>
+              <div class="event-meta-item">
+                <i class="fa-regular fa-clock"></i>
+                <span>09:00 AM – 01:00 PM</span>
+              </div>
+              <div class="event-meta-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>ISC Abu Dhabi, Auditorium</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- News & Announcements Section -->
+  <section class="py-5" id="news-section">
+    <div class="container">
+      <div class="section-header-flex reveal-hidden">
+        <h2>News & Announcements</h2>
+        <a href="#" class="view-all-link" id="link-news-viewall">
+          View All News <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+      
+      <div class="row g-4">
+        <!-- News Card 1 -->
+        <div class="col-lg-4 col-md-12 reveal-hidden reveal-delay-1">
+          <div class="news-horizontal-card">
+            <div class="row g-0 h-100 align-items-stretch">
+              <div class="col-5 news-img-col">
+                <img src="assets/news_timings.png" class="news-img" alt="Summer Office Timings">
+              </div>
+              <div class="col-7">
+                <div class="news-body d-flex flex-column justify-content-center h-100">
+                  <div class="news-badge badge-green">News</div>
+                  <h3 class="news-title">ISC Abu Dhabi Office Timings During Summer</h3>
+                  <p class="news-desc">Please note our new office timings effective from 15th May 2026.</p>
+                  <div>
+                    <a href="#" class="read-more-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- News Card 2 -->
+        <div class="col-lg-4 col-md-12 reveal-hidden reveal-delay-2">
+          <div class="news-horizontal-card">
+            <div class="row g-0 h-100 align-items-stretch">
+              <div class="col-5 news-img-col">
+                <img src="assets/news_scholarship.png" class="news-img" alt="Scholarship Application">
+              </div>
+              <div class="col-7">
+                <div class="news-body d-flex flex-column justify-content-center h-100">
+                  <div class="news-badge badge-orange">Announcement</div>
+                  <h3 class="news-title">Scholarship Applications Now Open</h3>
+                  <p class="news-desc">Applications for ISC Education Scholarship 2026 are now open.</p>
+                  <div>
+                    <a href="#" class="read-more-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- News Card 3 -->
+        <div class="col-lg-4 col-md-12 reveal-hidden reveal-delay-3">
+          <div class="news-horizontal-card">
+            <div class="row g-0 h-100 align-items-stretch">
+              <div class="col-5 news-img-col">
+                <img src="assets/news_volunteers.png" class="news-img" alt="Volunteers Meet">
+              </div>
+              <div class="col-7">
+                <div class="news-body d-flex flex-column justify-content-center h-100">
+                  <div class="news-badge badge-green">News</div>
+                  <h3 class="news-title">Volunteers Meet 2026</h3>
+                  <p class="news-desc">A successful meet with our amazing volunteers. Thank you for your continued support!</p>
+                  <div>
+                    <a href="#" class="read-more-link">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Executive Leadership Section -->
+  <section class="py-5" id="leadership-section">
+    <div class="container">
+      <div class="section-title-wrapper text-center reveal-hidden">
+        <h2 class="section-tag">Executive Leadership</h2>
+      </div>
+      
+      <div class="row g-4 row-cols-1 row-cols-md-3 justify-content-center">
+        <!-- Leader 1 -->
+        <div class="col reveal-hidden reveal-delay-1">
+          <div class="committee-card">
+            <div class="committee-img-wrapper">
+              <img src="assets/leader_president.png" alt="Ramesh Kumar - President" class="committee-img">
+            </div>
+            <h3 class="committee-name">Ramesh Kumar</h3>
+            <p class="committee-role">President</p>
+            <div class="committee-socials">
+              <a href="#" class="committee-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="committee-social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="committee-social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Leader 2 -->
+        <div class="col reveal-hidden reveal-delay-2">
+          <div class="committee-card">
+            <div class="committee-img-wrapper">
+              <img src="assets/leader_secretary.png" alt="Dr. Anish Mehta - General Secretary" class="committee-img">
+            </div>
+            <h3 class="committee-name">Dr. Anish Mehta</h3>
+            <p class="committee-role">General Secretary</p>
+            <div class="committee-socials">
+              <a href="#" class="committee-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="committee-social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="committee-social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Leader 3 -->
+        <div class="col reveal-hidden reveal-delay-3">
+          <div class="committee-card">
+            <div class="committee-img-wrapper">
+              <img src="assets/leader_vp.png" alt="Sneha Nair - Vice President" class="committee-img">
+            </div>
+            <h3 class="committee-name">Sneha Nair</h3>
+            <p class="committee-role">Vice President</p>
+            <div class="committee-socials">
+              <a href="#" class="committee-social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" class="committee-social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="committee-social-icon"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Member Testimonials Section -->
+  <section class="py-5" id="testimonials-section">
+    <div class="container">
+      <div class="section-title-wrapper text-center reveal-hidden">
+        <h2 class="section-tag">What Members Say</h2>
+      </div>
+      
+      <div class="row g-4 row-cols-1 row-cols-md-3">
+        <!-- Testimonial 1 -->
+        <div class="col reveal-hidden reveal-delay-1">
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <p class="testimonial-text">
+              "ISC Abu Dhabi has been a home away from home for my family. The facilities are top-notch and the cultural programs keep us rooted in our traditions."
+            </p>
+            <div class="testimonial-profile">
+              <div class="testimonial-avatar">RS</div>
+              <div>
+                <h4 class="testimonial-name">Rajesh Sharma</h4>
+                <div class="testimonial-meta">Member since 2018</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="col reveal-hidden reveal-delay-2">
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <p class="testimonial-text">
+              "The educational support, library facilities, and networking opportunities here are exceptional. My kids absolutely love the professional badminton coaching!"
+            </p>
+            <div class="testimonial-profile">
+              <div class="testimonial-avatar avatar-green">AV</div>
+              <div>
+                <h4 class="testimonial-name">Anjali Verma</h4>
+                <div class="testimonial-meta">Member since 2021</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="col reveal-hidden reveal-delay-3">
+          <div class="testimonial-card">
+            <i class="fa-solid fa-quote-right testimonial-quote-icon"></i>
+            <p class="testimonial-text">
+              "A truly vibrant community center that brings everyone together. The committee is highly active, organizing useful charity drives and sports leagues."
+            </p>
+            <div class="testimonial-profile">
+              <div class="testimonial-avatar avatar-blue">VS</div>
+              <div>
+                <h4 class="testimonial-name">Capt. Vikram Singh</h4>
+                <div class="testimonial-meta">Member since 2015</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-5" id="cta-section">
+    <div class="container reveal-hidden">
+      <div class="cta-container">
+        <!-- Premium architectural skyline outline -->
+        <svg class="cta-backdrop-svg" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 0,200 L 40,140 L 70,165 L 110,100 L 150,150 L 190,110 L 230,175 L 280,120 L 330,155 L 380,80 L 400,110 L 400,200 Z" stroke="rgba(255,255,255,0.06)" stroke-width="2" fill="none"/>
+        </svg>
+        
+        <div class="cta-content-wrapper">
+          <div class="cta-left">
+            <div class="cta-icon-wrapper">
+              <i class="fa-regular fa-users"></i>
+            </div>
+            <div>
+              <h2 class="cta-title">Join ISC Abu Dhabi</h2>
+              <p class="cta-subtitle">Be a part of a vibrant community. Together, we can achieve more.</p>
+            </div>
+          </div>
+          <div class="cta-right">
+            <a href="#" class="btn-cta-white" id="btn-cta-join">
+              Become a Member <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section">
+    <div class="container position-relative">
+      <!-- Mosque Architectural Silhouette -->
+      <svg class="footer-bg-mosque-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 50,200 L 50,120 L 55,120 L 55,200 Z M 52.5,120 L 52.5,90 M 50,95 L 55,95" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+        <path d="M 90,200 L 90,140 Q 110,105 130,140 L 130,200" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+        <path d="M 120,200 L 120,130 C 120,80 180,80 180,130 L 180,200" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+        <path d="M 150,85 L 150,65 M 145,72 L 155,72" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+        <path d="M 170,200 L 170,140 Q 190,105 210,140 L 210,200" stroke="rgba(255,255,255,0.04)" stroke-width="1" fill="none"/>
+        <path d="M 245,200 L 245,120 L 250,120 L 250,200 Z M 247.5,120 L 247.5,90 M 245,95 L 250,95" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+      </svg>
+      
+      <div class="row g-4 position-relative reveal-hidden" style="z-index: 5;">
+        <!-- Col 1 -->
+        <div class="col-lg-3 col-md-6">
+          <img src="assets/isc_logo.svg" alt="ISC Abu Dhabi Logo" class="footer-logo-img filter-white-logo" style="filter: brightness(0) invert(1);">
+          <p class="footer-about-text">
+            ISC Abu Dhabi is committed to serving the Indian community and promoting our rich cultural heritage.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="footer-social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        
+        <!-- Col 2 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Membership</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        
+        <!-- Col 3 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-col-title">Useful Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="#">Indian Embassy, UAE</a></li>
+            <li><a href="#">Community Welfare Fund</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        
+        <!-- Col 4 -->
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Villa No. 37, 8th Street, Al Khubeirah, Abu Dhabi, UAE</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span>+971 2 666 1981</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <span>info@iscabudhabi.com</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <hr class="footer-divider">
+      <p class="footer-bottom-text">© 2026 ISC Abu Dhabi. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Scroll to Top Progress Button -->
+  <div id="scroll-to-top" class="scroll-to-top">
+    <svg class="progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" stroke="rgba(230, 92, 0, 0.12)" stroke-width="3" fill="none" />
+      <path id="progress-path" d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" stroke="#E65C00" stroke-width="3" fill="none" />
+    </svg>
+    <div class="scroll-arrow">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+  </div>
+
+  <!-- Scroll & Animation Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Intersection Observer for scroll reveal
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.15
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("reveal-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      const hiddenElements = document.querySelectorAll(".reveal-hidden");
+      hiddenElements.forEach(el => observer.observe(el));
+
+      // Scroll to Top Progress Logic
+      const scrollToTopBtn = document.getElementById("scroll-to-top");
+      const progressPath = document.getElementById("progress-path");
+      
+      if (scrollToTopBtn && progressPath) {
+        const pathLength = progressPath.getTotalLength();
+        progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+        progressPath.style.strokeDashoffset = pathLength;
+
+        const updateProgress = () => {
+          const scroll = window.scrollY;
+          const height = document.documentElement.scrollHeight - window.innerHeight;
+          const progress = pathLength - (scroll * pathLength) / height;
+          progressPath.style.strokeDashoffset = progress;
+
+          if (scroll > 300) {
+            scrollToTopBtn.classList.add("active");
+          } else {
+            scrollToTopBtn.classList.remove("active");
+          }
+        };
+
+        window.addEventListener("scroll", updateProgress);
+        updateProgress(); // Initialize on load
+
+        scrollToTopBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

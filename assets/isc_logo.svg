@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 160" width="550" height="160">
+  <!-- Left Emblem Group -->
+  <g transform="translate(0, 0)">
+    <!-- White backing to prevent see-through for the inner logo disk -->
+    <circle cx="70" cy="75" r="56" fill="#FFFFFF" />
+    
+    <!-- Saffron Outer Circle -->
+    <circle cx="70" cy="75" r="55" stroke="#FF9933" stroke-width="4.5" fill="none"/>
+    
+    <!-- White Middle Space -->
+    <circle cx="70" cy="75" r="50" stroke="#FFFFFF" stroke-width="3.5" fill="none"/>
+    
+    <!-- Green Inner Circle -->
+    <circle cx="70" cy="75" r="45" stroke="#138808" stroke-width="4.5" fill="none"/>
+    
+    <!-- Inner White Area -->
+    <circle cx="70" cy="75" r="40" fill="#FFFFFF"/>
+    
+    <!-- Blue Crest Wreath & Tree -->
+    <!-- Wreath (left & right branches) -->
+    <path d="M 45,72 C 45,85 52,98 70,98 C 88,98 95,85 95,72" stroke="#002855" stroke-width="1.5" fill="none"/>
+    <!-- Leaf details on wreath -->
+    <path d="M 45,72 L 42,70 M 47,76 L 43,73 M 50,82 L 46,78 M 54,88 L 50,84 M 60,94 L 56,90 M 70,98 L 70,94 M 80,94 L 84,90 M 86,88 L 90,84 M 90,82 L 94,78 M 93,76 L 97,73 M 95,72 L 98,70" stroke="#002855" stroke-width="1.5"/>
+    
+    <!-- Tree Trunk -->
+    <path d="M 68,82 L 68,74 L 72,74 L 72,82 Z" fill="#002855"/>
+    <!-- Tree Roots -->
+    <path d="M 65,84 L 68,82 L 72,82 L 75,84" stroke="#002855" stroke-width="1.5" fill="none"/>
+    
+    <!-- Tree Canopy (Banyan Tree branches) -->
+    <!-- Left canopy branch -->
+    <path d="M 68,74 Q 52,70 55,60 Q 58,50 70,64" stroke="#002855" stroke-width="1.5" fill="none"/>
+    <!-- Right canopy branch -->
+    <path d="M 72,74 Q 88,70 85,60 Q 82,50 70,64" stroke="#002855" stroke-width="1.5" fill="none"/>
+    <!-- Central canopy branch -->
+    <path d="M 70,74 V 56" stroke="#002855" stroke-width="1.5" fill="none"/>
+    
+    <!-- Canopy Foliage details (circles/leaves) -->
+    <circle cx="70" cy="54" r="5" fill="#002855"/>
+    <circle cx="56" cy="58" r="4.5" fill="#002855"/>
+    <circle cx="84" cy="58" r="4.5" fill="#002855"/>
+    <circle cx="62" cy="62" r="5" fill="#002855"/>
+    <circle cx="78" cy="62" r="5" fill="#002855"/>
+    <circle cx="52" cy="66" r="4" fill="#002855"/>
+    <circle cx="88" cy="66" r="4" fill="#002855"/>
+    <circle cx="70" cy="68" r="4" fill="#002855"/>
+    
+    <!-- Text around canopy inside crest: "ABU DHABI" -->
+    <path id="crest-text-path" d="M 40,65 A 30,30 0 1,1 100,65" fill="none"/>
+    <text font-size="5" fill="#002855" font-family="'Poppins', sans-serif" font-weight="700" letter-spacing="0.5">
+      <textPath href="#crest-text-path" startOffset="50%" text-anchor="middle">
+        ABU DHABI
+      </textPath>
+    </text>
+  </g>
+  
+  <!-- Right Text Group -->
+  <g transform="translate(142, 0)">
+    <!-- "INDIA" word -->
+    <text x="0" y="86" font-family="'Poppins', sans-serif" font-weight="900" font-size="88" letter-spacing="-1">
+      <tspan fill="#E53988">I</tspan>
+      <tspan fill="#FFB300">N</tspan>
+      <tspan fill="#00BCD4">D</tspan>
+      <tspan fill="#F4511E">I</tspan>
+      <tspan fill="#7E57C2">A</tspan>
+    </text>
+    
+    <!-- "SOCIAL & CULTURAL CENTRE" word -->
+    <text x="3" y="116" font-family="'Poppins', sans-serif" font-weight="800" font-size="19" fill="#1A202C" letter-spacing="0.2">SOCIAL &amp; CULTURAL CENTRE</text>
+    
+    <!-- "Pravasi Bharatiya Samman Awardee" word -->
+    <text x="3" y="136" font-family="'Poppins', sans-serif" font-weight="600" font-style="italic" font-size="13" fill="#4A5568" letter-spacing="0.3">Pravasi Bharatiya Samman Awardee</text>
+  </g>
+</svg>
