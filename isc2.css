@@ -273,29 +273,34 @@ h1, h2, h3, h4, h5, h6 {
   pointer-events: auto;
 }
 
-.stats-flex-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 40px;
+.stats-rotation-container {
+  position: relative;
+  height: 60px;
+  width: 280px;
+  margin-left: auto;
 }
 
-.stat-item {
+.stat-item-rotate {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 16px;
   color: #FFFFFF;
-  position: relative;
+  pointer-events: none;
 }
 
-.stat-item:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  right: -20px;
-  top: 10%;
-  height: 80%;
-  width: 1px;
-  background-color: rgba(255, 255, 255, 0.2);
+.stat-item-rotate.active {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .stat-icon-wrapper {
@@ -354,12 +359,12 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 16px;
     box-shadow: 0 8px 30px rgba(10, 37, 64, 0.15);
   }
-  .stats-flex-container {
-    justify-content: space-around;
-    gap: 15px;
+  .stats-rotation-container {
+    margin: 0 auto;
+    width: 280px;
   }
-  .stat-item:not(:last-child)::after {
-    display: none;
+  .stat-item-rotate {
+    justify-content: center;
   }
 }
 
@@ -369,15 +374,6 @@ h1, h2, h3, h4, h5, h6 {
   }
   .hero-btns {
     flex-direction: column;
-  }
-  .stats-flex-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-  }
-  .stat-item {
-    width: auto;
-    min-width: 200px;
   }
 }
 

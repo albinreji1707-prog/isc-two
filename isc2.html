@@ -137,9 +137,9 @@
 
     <!-- Statistics Overlaid inside the wave -->
     <div class="hero-stats-overlay animate-hero-stats">
-      <div class="stats-flex-container">
+      <div class="stats-rotation-container">
         <!-- Stat Item 1 -->
-        <div class="stat-item">
+        <div class="stat-item-rotate active">
           <div class="stat-icon-wrapper">
             <i class="fa-regular fa-users"></i>
           </div>
@@ -149,7 +149,7 @@
           </div>
         </div>
         <!-- Stat Item 2 -->
-        <div class="stat-item">
+        <div class="stat-item-rotate">
           <div class="stat-icon-wrapper">
             <i class="fa-regular fa-calendar-days"></i>
           </div>
@@ -159,7 +159,7 @@
           </div>
         </div>
         <!-- Stat Item 3 -->
-        <div class="stat-item">
+        <div class="stat-item-rotate">
           <div class="stat-icon-wrapper">
             <i class="fa-regular fa-heart"></i>
           </div>
@@ -778,6 +778,17 @@
             behavior: "smooth"
           });
         });
+      }
+
+      // Statistics Ticker Rotation (3-second gap)
+      const statItems = document.querySelectorAll(".stat-item-rotate");
+      if (statItems.length > 0) {
+        let currentStatIndex = 0;
+        setInterval(() => {
+          statItems[currentStatIndex].classList.remove("active");
+          currentStatIndex = (currentStatIndex + 1) % statItems.length;
+          statItems[currentStatIndex].classList.add("active");
+        }, 3000);
       }
     });
   </script>
